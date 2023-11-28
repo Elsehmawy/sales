@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sale</title>
+    <link rel="stylesheet" href="styeel.css" />
+  </head>
+  <body id="body">
+    <div class="cruds">
+      <div class="head">
+        <h2>cruds</h2>
+        <p>product management system</p>
+      </div>
+
+      <div class="inputs">
+        <input type="text" id="title" placeholder="الاســـــــــم" />
+        <input type="text" id="categry" placeholder="الوظيــــــــــــــــــــــفة" />
+        <div class="price">
+          <input
+            onkeydown="getTotal()"
+            type="number"
+            id="price"
+            placeholder="الراتــــــب"
+          />
+          <input
+            onkeydown="getTotal()"
+            type="number"
+            id="taxes"
+            placeholder="ايـام العمل"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="ads"
+            placeholder="الخصـــــــــــم"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="descount"
+            placeholder="الغيـــــاب"
+          />
+          <small id="total"></small>
+        </div>
+        <input type="number" id="count" placeholder="count" />
+        <button id="submit">creat</button>
+      </div>
+
+      <div class="outputs">
+        <div class="searchBlock">
+          <input onkeyup="SearchData(this.value)" type="text" id="search" placeholder="search" />
+          <div class="btnsearch">
+            <button onclick="getsearchmood(this.id)" id="searchTitle">search by Title</button>
+            <button onclick="getsearchmood(this.id)" id="searchcategory">search by category</button>
+          </div>
+        </div>
+        <div id="DeletAll">
+
+          
+        </div>
+        <table>
+          <tr>
+            <th>م</th>
+            <th>الاســم</th>
+            <th>الوظيفة</th>
+            <th>الراتـب</th>
+            <th>ايام العمل</th>
+            <th>الخصــم</th>
+            <th>الغيـاب</th>
+            <th>صافي الراتب</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody">
+     
+         
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div>
+        <button onclick=" prnt()" id="prent">print</button>
+       <button id="ddd">
+
+           <A href="javascript:window.location.reload()" target="_self">اضغط هنا لتحديث الصفحة</A>
+       </button> 
+
+    </div>
+    <footer>
+      <div class="copyrite">
+        <h3>جميع الحقوق محفوظة</h3>
+        <img src="logo  (1).png" alt="">
+        <h3>محمد السحماوى للبرمجيات</h3>
+      </div>
+    </footer>
+    <script src="maien.js"></script>
+  </body>
+</html>
